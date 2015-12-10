@@ -1,4 +1,5 @@
-import { formValidator, Rectangle } from '../index';
+import { formValidator } from '../index';
+import { expect } from 'chai';
 
 describe('formValidator()', () => {
   it('returns a function', () => {
@@ -7,8 +8,3 @@ describe('formValidator()', () => {
   });
 });
 
-describe('Rectangle', () => {
-  it('lets me create a new one', () => {
-    let rectangle = new Rectangle(10);
-  });
-});
