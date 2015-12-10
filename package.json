@@ -2,7 +2,13 @@
   "name": "redux-form-validator",
   "version": "0.0.1",
   "description": "A tool for standaridizing form validations in redux.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
   "scripts": {
     "test": "mocha --compilers js:babel-register --recursive",
     "test:watch": "npm test -- --watch",
@@ -10,6 +16,10 @@
     "build:umd": "webpack src/index.js dist/redux-form-validator.js --config webpack.config.development.js",
     "build:umd:min": "webpack src/index.js dist/redux-form-validator.min.js --config webpack.config.production.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spencercdixon/redux-form-validator.git"
   },
   "keywords": [
     "redux",
@@ -19,6 +29,9 @@
   ],
   "author": "Spencer C. Dixon",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpencerCDixon/redux-form-validator/issues"
+  },
   "devDependencies": {
     "babel-core": "^6.3.15",
     "babel-loader": "^6.2.0",
