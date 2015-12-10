@@ -2,7 +2,6 @@ import { expect } from 'chai';
 import { isObject, isArray, isString, isNumber } from '../src/predicates';
 import { cloneWithoutKey } from './helpers';
 
-
 const primitiveExamples = {
   integer: 42,
   string: 'is the meaning of life',
