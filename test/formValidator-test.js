@@ -1,4 +1,4 @@
-import { formValidator } from '../index';
+import { formValidator } from '../src/formValidator';
 import { expect } from 'chai';
 
 describe('formValidator()', () => {
