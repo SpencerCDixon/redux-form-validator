@@ -1,4 +1,4 @@
-import { formValidator } from 'formValidator';
+import { formValidator } from './formValidator';
 
 export {
   formValidator
